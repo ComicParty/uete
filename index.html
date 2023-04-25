@@ -3,33 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <title>前航-前端导航网站</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 <header class="globalHeader">
-    <input type ="text">
-    <button>搜索</button>
+    <form class="searchForm" method="get" action="https://www.baidu.com/s" >
+        <input name="wd" type="text">
+        <button type="submit">搜索</button>
+    </form>
 </header>
 <main class="globalMain">
     <ul class="siteList">
         <li>
-            <div class="site">
-                <div class="logo"></div>
-                <div class="link">ailiaili.com</div>
-            </div>
-            <div class="site">
-                <div class="logo"></div>
-                <div class="link">bilibili.com</div>
-            </div>
-            <div class="site">
-                <div class="logo"></div>
-                <div class="link">clicli.com</div>
-            </div>
+            <a href="https://www.aliali.cn/">
+                <div class="site">
+                    <div class="logo">
+                        <img src="./images/ali.png" alt="aliali.icon">
+                    </div>
+                    <div class="link">aliali</div>
+                </div>
+            </a>
         </li>
         <li>
-            <div  class="addButton">
-                新增网站
+            <a href="https://www.bilibili.com/">
+                <div class="site">
+                    <div class="logo">
+                        <img src="./images/bili.ico" alt="bilibili.icon">
+                    </div>
+                    <div class="link">bilibili</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="https://clicli.com.cn/">
+                <div class="site">
+                    <div class="logo">
+                        <img src="./images/cli.png" alt="clicli.icon">
+                    </div>
+                    <div class="link">clicli</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <div class="addButton">
+                <div class="icon-wrapper">
+                    <img class="icon" src="./images/add.png" alt="添加.icon">
+                </div>
+                <div class="text">新增网站</div>
+
             </div>
         </li>
     </ul>
