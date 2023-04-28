@@ -1,3 +1,14 @@
+const hashMap=[
+    {logo:'A',url:'https://www.aliali.cn/'},
+    {
+        logo: 'B',
+        url:'https://www.bilibili.com/'
+    },
+    {
+        logo: 'C',
+        url:'https://clicli.com.cn/'
+    }
+]
 $('.addButton')
     .on('click',()=>{
             let url = window.prompt('请问你要添加的网址是啥？')
